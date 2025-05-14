@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   outline: 0px dashed red;
-  /* overflow: hidden; */
   transition: 1s;
 }
 
@@ -62,11 +61,45 @@ section {
   height: 0;
   position: absolute;
   bottom: 0;
-  overflow: hidden;
+  overflow: scroll;
   z-index: 1;
   
-  ul {
+  div.tips {
+    background: #fffccf;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    span.lesson {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  ul.ul00 {
+    margin: 0;
+
+    li {
+      margin: 0;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  ul,
+  ol,
+  p {
     margin: 8px;
+  }
+
+  ul li,
+  ol li {
+    margin: 8px 0;
   }
 }
 
