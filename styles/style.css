@@ -88,6 +88,16 @@ section {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+   
+      h2 {
+        font-size; 3em;
+      }
+
+      button {
+        padding: 10px 0;
+        width: 150px;
+        font-size: medium;
+      }
     }
   }
 
